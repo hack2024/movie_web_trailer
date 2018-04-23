@@ -1,19 +1,7 @@
 import webbrowser
 import os
 import re
-
-# A single movie entry html template
-movie_tile_content = '''
-<div class="swiper-slide dark" style="background-image: url('imgs/transformers_3.jpg'); background-size: cover">
-    <div class="container clearfix">
-        <div class="slider-caption top-left center">
-            <h2 class="font-primary nott">TRANSFORMERS</h2>
-            <p class="t300 font-primary d-none d-sm-block">Raise your limits over</p>
-            <a href="#" class="button button-rounded button-border button-white button-light nott">View Trailer</a>
-        </div>
-    </div>
-</div>
-'''
+import app_view
 
 
 def create_movie_tiles_content(movies):
@@ -29,8 +17,9 @@ def create_movie_tiles_content(movies):
                               else None)
 
         # Append the tile for the movie with its content filled in
-        content += movie_tile_content.format(
+        content += app_view.movie_tile_content.format(
             movie_title=movie.title,
+			movie_short_description=movie.short_description,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id
         )
@@ -39,15 +28,14 @@ def create_movie_tiles_content(movies):
 
 def open_movies_page(movies):
     # Create or overwrite the output file
-    output_file = open('view/index.html')
+    output_file = open('index.html', 'w')
 
-    output_file.__format__
     # Replace the movie tiles placeholder generated content
-    rendered_content = main_page_content.format(
+    rendered_content = app_view.main_page_content.format(
         movie_tiles=create_movie_tiles_content(movies))
 
     # Output the file
-    output_file.write(main_page_head + rendered_content)
+    output_file.write(app_view.main_page_head + rendered_content)
     output_file.close()
 
     # open the output file in the browser (in a new tab, if possible)

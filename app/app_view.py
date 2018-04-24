@@ -171,7 +171,7 @@ movie_tile_content = '''
         <div class="slider-caption top-left center">
             <h2 class="font-primary nott">{movie_title}</h2>
             <p class="t300 font-primary d-none d-sm-block">{movie_short_description}</p>
-            <a href="#" id="movie_triler_video" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer" class="button button-rounded button-border button-white button-light nott">View Trailer</a>
+            <a href="{trailer_youtube_url}" data-lightbox="iframe" class="button button-rounded button-border button-white button-light nott">View Trailer</a>
         </div>
     </div>
 </div>

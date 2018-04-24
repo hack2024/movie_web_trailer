@@ -30,7 +30,7 @@ json_star_wars["movieTrailer"] = "https://www.youtube.com/watch?v=Q0CbN8sfihY"
 response = urllib.urlopen(omdb_api_url + "tt0088763")
 json_back_to_the_future = json.loads(response.read())
 json_back_to_the_future["posterImage"] = "view/imgs/backtofuture.jpg"
-json_back_to_the_future["movieTrailer"] = "https://www.youtube.com/watch?v=2LnShmQ_hLc"
+json_back_to_the_future["movieTrailer"] = "https://www.youtube.com/watch?v=jEnERs6GvDc"
 
 #get transformers movie data
 response = urllib.urlopen(omdb_api_url + "tt3371366")

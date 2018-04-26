@@ -5,13 +5,20 @@ import app_view
 
 
 def create_movie_tiles_content(movies):
-    # The HTML content for this section of the page
+    """Create a movie tile
+
+    Create the tiles to be added to the main html page later
+
+    Args:
+        movies: an array of movie instances
+
+    """
     content = ''
     for movie in movies:
         # Append the tile for the movie with its content filled in
         content += app_view.movie_tile_content.format(
             movie_title=movie.title,
-			movie_short_description=movie.short_description,
+            movie_short_description=movie.short_description,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_url=movie.trailer_youtube_url
         )
@@ -19,7 +26,14 @@ def create_movie_tiles_content(movies):
 
 
 def open_movies_page(movies):
-    # Create or overwrite the output file
+    """Render the index.html
+
+    Open a web browser and display the movies information in the movies array
+
+    Args:
+        movies: an array of movie instances
+
+    """
     output_file = open('index.html', 'w')
 
     # Replace the movie tiles placeholder generated content

@@ -1,3 +1,7 @@
+"""
+This module controlls all refer to the html view.
+"""
+
 # Styles and scripting for the page
 main_page_head = '''
 <!DOCTYPE html>

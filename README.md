@@ -50,4 +50,5 @@ At this moment the application should raise a browser and show the website with 
 
 ### Author
 **Fernando Balmaceda - phantom2024@gmail.com**
-Copyrights © 2014 All Rights Reserved by Canvas Inc.
+
+To improve the style of the page, I used a part of a template called CANVAS (Copyrights © 2014 All Rights Reserved by Canvas Inc.)

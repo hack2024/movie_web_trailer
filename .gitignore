@@ -6,3 +6,4 @@
 *.php
 *.mp3
 *.html
+!movie_error_page.html

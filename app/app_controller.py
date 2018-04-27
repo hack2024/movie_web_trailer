@@ -34,7 +34,7 @@ def open_movies_page(movies):
         movies: an array of movie instances
 
     """
-    output_file = open('index.html', 'w')
+    output_file = open('view/index.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = app_view.main_page_content.format(
@@ -46,4 +46,15 @@ def open_movies_page(movies):
 
     # open the output file in the browser (in a new tab, if possible)
     url = os.path.abspath(output_file.name)
+    webbrowser.open('file://' + url, new=2)
+
+
+def open_error_page():
+    """Render the error.html
+
+    Open a web browser and display the error page in case of any error
+
+    """
+    # open the output file in the browser (in a new tab, if possible)
+    url = os.path.abspath('view/movie_error_page.html')
     webbrowser.open('file://' + url, new=2)

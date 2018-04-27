@@ -14,26 +14,26 @@ main_page_head = '''
 	<!-- Stylesheets
 	============================================= -->
 	<link href="http://fonts.googleapis.com/css?family=Mukta+Vaani:300,400,500,600,700|Open+Sans:300,400,600,700,800,900" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="view/css/bootstrap.css" type="text/css" />
-	<link rel="stylesheet" href="view/style.css" type="text/css" />
-	<link rel="stylesheet" href="view/css/dark.css" type="text/css" />
-	<link rel="stylesheet" href="view/css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="./css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="./style.css" type="text/css" />
+	<link rel="stylesheet" href="./css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="./css/swiper.css" type="text/css" />
 
 	<!-- Bootstrap Select CSS -->
-	<link rel="stylesheet" href="view/css/components/bs-select.css" type="text/css" />
+	<link rel="stylesheet" href="./css/components/bs-select.css" type="text/css" />
 
 	<!-- car Specific Stylesheet -->
-	<link rel="stylesheet" href="view/demos/car/car.css" type="text/css" />
-	<link rel="stylesheet" href="view/demos/car/css/car-icons/style.css" type="text/css" />
+	<link rel="stylesheet" href="./demos/car/car.css" type="text/css" />
+	<link rel="stylesheet" href="./demos/car/css/car-icons/style.css" type="text/css" />
 	<!-- / -->
 
-	<link rel="stylesheet" href="view/css/font-icons.css" type="text/css" />
-	<link rel="stylesheet" href="view/css/animate.css" type="text/css" />
-	<link rel="stylesheet" href="view/css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="./css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="./css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="./css/magnific-popup.css" type="text/css" />
 
-	<link rel="stylesheet" href="view/demos/car/css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="./demos/car/css/fonts.css" type="text/css" />
 
-	<link rel="stylesheet" href="view/css/responsive.css" type="text/css" />
+	<link rel="stylesheet" href="./css/responsive.css" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lt IE 9]>
 		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -94,7 +94,7 @@ main_page_head = '''
 
 # The main page layout and title bar
 main_page_content = '''
-<body class="stretched side-push-panel" data-loader-html="<div><img src='view/demos/car/images/page-loader.gif' alt='Loader'></div>">
+<body class="stretched side-push-panel" data-loader-html="<div><img src='./demos/car/images/page-loader.gif' alt='Loader'></div>">
 
     <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
@@ -156,13 +156,13 @@ main_page_content = '''
 
 	<!-- External JavaScripts
 	============================================= -->
-	<script src="view/js/jquery.js"></script>
-	<script src="view/js/plugins.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/plugins.js"></script>
 
 	<!-- Footer Scripts
 	============================================= -->
-	<script src="view/js/functions.js"></script>
-	<script src="view/js/movie_website.js"></script>
+	<script src="./js/functions.js"></script>
+	<script src="./js/movie_website.js"></script>
 </body>
 </html>
 '''

@@ -8,15 +8,19 @@ from app_model import Movie
 import app_controller
 import app_json_movies_data
 
-# Create all the favourite movie instances
-alien = Movie(app_json_movies_data.json_alien)
-predator = Movie(app_json_movies_data.json_predator)
-terminator = Movie(app_json_movies_data.json_terminator)
-star_wars = Movie(app_json_movies_data.json_star_wars)
-back_to_future = Movie(app_json_movies_data.json_back_to_the_future)
-transformers = Movie(app_json_movies_data.json_transformers)
+try:
+    # Gets movie data from API
+    movies_data = app_json_movies_data.get_movies_data()
 
-movies = [alien, predator, terminator, star_wars, back_to_future, transformers]
+    # Create all the favourite movie instances
+    movies = []
+    for movie in movies_data:
+        movie_instance = Movie(movie)
+        movies.append(movie_instance)
 
-# Call the open_movies_page that render the page whit all the movies
-app_controller.open_movies_page(movies)
+    # Call the open_movies_page that render the page whit all the movies
+    app_controller.open_movies_page(movies)
+except IOError:
+    # If the connection whit the API throws an Exception
+    # show an error page
+    app_controller.open_error_page()
